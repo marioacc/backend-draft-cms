@@ -1,8 +1,8 @@
 # backend-draft-cms
 
-## Create virtual enviroment.
+## Create virtual environment.
 1. Download and install [virtualenv](https://virtualenv.pypa.io/) version 15.X.X .
-2. Create a the virtual enviroment using Python 3.X.X using 
+2. Create a the virtual environment using Python 3.X.X using
 ```bash
 virtualenv -p python3 backend-draft-cms/
 ```  
@@ -10,7 +10,7 @@ virtualenv -p python3 backend-draft-cms/
 ```bash
 pip install -r requirements.txt
 ```  
-4. Activate the virtual enviroment.
+4. Activate the virtual environment.
 ```bash
 source bin/activate
 ```  
