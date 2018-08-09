@@ -109,3 +109,4 @@ include/
 .Python
 pip-selfcheck.json
 
+vscode/
