@@ -20,7 +20,7 @@ pip install -r requirements.txt
 ```  
 4. Activate the virtual enviroment.
 ```bash
-source bin/activate.fish
+source bin/activate
 ```  
 
 
