@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+    'api'
 ]
 
 MIDDLEWARE = [
@@ -47,8 +49,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'rest-framework',
-    'api'
+    
 ]
 
 ROOT_URLCONF = 'draftCMSAPI.urls'
@@ -77,8 +78,15 @@ WSGI_APPLICATION = 'draftCMSAPI.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'djongo',
+        'ENFORCE_SCHEMA': True,
+        'NAME': 'draft-cms-database',
+        'HOST': 'ds119161.mlab.com',
+        'PORT': 19161,
+        'USER': 'root',
+        'AUTH_SOURCE': 'draft-cms-database',
+        'AUTH_MECHANISM': 'SCRAM-SHA-1',
+        'PASSWORD': 'Draft-CMS-Databas3',
     }
 }
 
