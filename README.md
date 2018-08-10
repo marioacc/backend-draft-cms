@@ -29,5 +29,7 @@ $ source bin/activate
 $ pip install -r requirements.txt
 ```  
 
+## Project Information
 
-
+* Database in use: MongoDB
+* ORM in use:[Mongo Engine](http://mongoengine.org/)
